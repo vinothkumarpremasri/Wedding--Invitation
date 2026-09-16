@@ -20,7 +20,7 @@
         .home-section {
             position: relative;
             width: 100vw;
-2            height: 350vh;
+            height: 350vh;
             overflow: hidden;
             margin: 0;
             padding: 0;
@@ -28,7 +28,7 @@
 
         .home-section::after {
             content: '';
-q            position: absolute;
+            position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
@@ -175,7 +175,7 @@ q            position: absolute;
 
         .couple {
             position: absolute;
-            bottom: -6%;
+            bottom: -2vh;
             left: 50%;
             transform: translateX(-50%) scale(0.3);
             width: 50vw;
@@ -192,7 +192,7 @@ q            position: absolute;
 
         .home-pecock-left {
             position: absolute;
-            bottom: 5%;
+            bottom: 85vh;
             left: -15px;
             width: 120px;
             z-index: 2;
@@ -203,7 +203,7 @@ q            position: absolute;
 
         .home-pecock-right {
             position: absolute;
-            bottom: 5%;
+            bottom: 85vh;
             right: -15px;
             width: 120px;
             z-index: 2;
@@ -215,7 +215,7 @@ q            position: absolute;
 
         .home-flower-left {
             position: absolute;
-            bottom: 15%;
+            bottom: 70vh;
             left: 10%;
             width: 60px;
             z-index: 2;
@@ -225,7 +225,7 @@ q            position: absolute;
 
         .home-flower-right {
             position: absolute;
-            bottom: 15%;
+            bottom: 70vh;
             right: 10%;
             width: 60px;
             z-index: 2;
@@ -448,7 +448,7 @@ q            position: absolute;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: url('Assect/bg image.jpg') center/cover no-repeat;
+            background: url('Assect/bg/bg image.jpg') center/cover no-repeat;
             padding: 60px 20px;
             position: relative;
         }
@@ -760,7 +760,7 @@ q            position: absolute;
 
     .gallery-section {
         width: 100vw;
-        background: url('Assect/bg image.jpg') center/cover no-repeat;
+        background: url('Assect/bg/bg image.jpg') center/cover no-repeat;
         padding: 60px 20px;
         position: relative;
         overflow: hidden;
@@ -784,7 +784,7 @@ q            position: absolute;
         right: -50px;
         width: 300px;
         height: 300px;
-        background: url('Assect/bg-patten-kozham.png') center/cover no-repeat;
+        background: url('Assect/bg/bg-patten-kozham.png') center/cover no-repeat;
         opacity: 0.3;
         z-index: 0;
     }
@@ -1093,7 +1093,6 @@ q            position: absolute;
         .gallery-right-item {
             border-width: 3px;
         }
-        }
 
         .gallery-title h2 {
             font-size: 1.5rem;
@@ -1113,11 +1112,11 @@ q            position: absolute;
             top: 15px;
             right: 20px;
         }
-    
+    }
 
     .events-section {
         width: 100vw;
-        background: url('Assect/bg image.jpg') center/cover no-repeat;
+        background: url('Assect/bg/bg image.jpg') center/cover no-repeat;
         padding: 60px 20px;
         position: relative;
         overflow: hidden;
@@ -1341,7 +1340,7 @@ q            position: absolute;
 
     .blessings-section {
         width: 100vw;
-        background: url('Assect/bg image.jpg') center/cover no-repeat;
+        background: url('Assect/bg/bg image.jpg') center/cover no-repeat;
         padding: 60px 20px;
         position: relative;
         overflow: hidden;
@@ -1986,7 +1985,7 @@ q            position: absolute;
 
     .location-section {
         width: 100vw;
-        background: url('Assect/bg image.jpg') center/cover no-repeat;
+        background: url('Assect/bg/bg image.jpg') center/cover no-repeat;
         padding: 60px 20px;
         position: relative;
         overflow: hidden;
@@ -2054,7 +2053,7 @@ q            position: absolute;
         left: -80px;
         width: 300px;
         height: 300px;
-        background: url('Assect/bg-patten-kozham.png') center/cover no-repeat;
+        background: url('Assect/bg/bg-patten-kozham.png') center/cover no-repeat;
         opacity: 0.3;
         transform: rotate(180deg);
         z-index: 0;
@@ -2066,7 +2065,7 @@ q            position: absolute;
         right: -50px;
         width: 250px;
         height: 250px;
-        background: url('Assect/bg-patten-kozham.png') center/cover no-repeat;
+        background: url('Assect/bg/bg-patten-kozham.png') center/cover no-repeat;
         opacity: 0.3;
         z-index: 0;
     }
@@ -2407,6 +2406,381 @@ q            position: absolute;
             .music-title {
                 font-size: 0.6rem;
             }
+
+            .music-nav-btn {
+                width: 30px;
+                height: 30px;
+                font-size: 10px;
+            }
+
+            .playlist-btn {
+                width: 30px;
+                height: 30px;
+            }
+
+            .playlist-btn svg {
+                width: 14px;
+                height: 14px;
+            }
+        }
+
+        .music-nav-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-size: 11px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: background 0.3s ease;
+        }
+
+        .music-nav-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .playlist-btn {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: background 0.3s ease;
+        }
+
+        .playlist-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .playlist-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .minimize-btn {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(212, 168, 67, 0.5);
+            background: rgba(212, 168, 67, 0.2);
+            color: #D4A843;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.25s ease;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            z-index: 2;
+        }
+
+        .minimize-btn:hover {
+            background: rgba(212, 168, 67, 0.45);
+            border-color: #D4A843;
+            transform: scale(1.1);
+        }
+
+        .minimize-btn svg {
+            width: 13px;
+            height: 13px;
+        }
+
+        .music-player {
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .music-player.minimized {
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0.5) translateY(20px);
+            pointer-events: none;
+        }
+
+        .music-mini-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            background: linear-gradient(135deg, #8B0000, #471e1e);
+            color: #fff;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: miniIconPulse 2s ease-in-out infinite;
+        }
+
+        .music-mini-icon.visible {
+            display: flex;
+        }
+
+        .music-mini-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(139, 0, 0, 0.6);
+        }
+
+        .music-mini-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .music-mini-icon.playing {
+            animation: miniIconSpin 4s linear infinite;
+        }
+
+        @keyframes miniIconPulse {
+            0%, 100% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }
+            50% { box-shadow: 0 4px 25px rgba(212, 168, 67, 0.4); }
+        }
+
+        @keyframes miniIconSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .mini-bars {
+            position: absolute;
+            bottom: 6px;
+            display: flex;
+            align-items: flex-end;
+            gap: 2px;
+            height: 10px;
+        }
+
+        .mini-bar {
+            width: 2px;
+            background: #D4A843;
+            border-radius: 1px;
+            animation: none;
+        }
+
+        .music-mini-icon.playing .mini-bar {
+            animation: miniBarAnim 0.5s ease-in-out infinite alternate;
+        }
+
+        .mini-bar:nth-child(1) { height: 4px; animation-delay: 0s; }
+        .mini-bar:nth-child(2) { height: 8px; animation-delay: 0.15s; }
+        .mini-bar:nth-child(3) { height: 5px; animation-delay: 0.3s; }
+
+        @keyframes miniBarAnim {
+            0% { height: 2px; }
+            100% { height: 10px; }
+        }
+
+        @media (max-width: 480px) {
+            .minimize-btn {
+                width: 22px;
+                height: 22px;
+                top: 4px;
+                right: 4px;
+            }
+
+            .minimize-btn svg {
+                width: 11px;
+                height: 11px;
+            }
+
+            .music-mini-icon {
+                bottom: 10px;
+                right: 10px;
+                width: 44px;
+                height: 44px;
+            }
+
+            .music-mini-icon svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        .playlist-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .playlist-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .playlist-panel {
+            position: fixed;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            max-height: 60vh;
+            background: linear-gradient(135deg, #471e1e, #2a1010);
+            border-top: 2px solid #D4A843;
+            border-radius: 20px 20px 0 0;
+            z-index: 1000;
+            transition: bottom 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .playlist-panel.active {
+            bottom: 0;
+        }
+
+        .playlist-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            border-bottom: 1px solid rgba(212, 168, 67, 0.3);
+            flex-shrink: 0;
+        }
+
+        .playlist-title {
+            color: #D4A843;
+            font-size: 1.1rem;
+            font-family: 'Georgia', serif;
+            letter-spacing: 2px;
+        }
+
+        .playlist-close {
+            background: none;
+            border: none;
+            color: #D4A843;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0 4px;
+            line-height: 1;
+            transition: color 0.2s;
+        }
+
+        .playlist-close:hover {
+            color: #fff;
+        }
+
+        .playlist-body {
+            overflow-y: auto;
+            flex: 1;
+            padding: 8px 0;
+        }
+
+        .playlist-body::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .playlist-body::-webkit-scrollbar-thumb {
+            background: #D4A843;
+            border-radius: 2px;
+        }
+
+        .playlist-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            border-bottom: 1px solid rgba(212, 168, 67, 0.1);
+        }
+
+        .playlist-item:hover {
+            background: rgba(212, 168, 67, 0.1);
+        }
+
+        .playlist-item.active {
+            background: rgba(212, 168, 67, 0.2);
+            border-left: 3px solid #D4A843;
+        }
+
+        .playlist-item-num {
+            color: #D4A843;
+            font-size: 0.85rem;
+            width: 24px;
+            text-align: center;
+            flex-shrink: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        .playlist-item.active .playlist-item-num {
+            color: #fff;
+        }
+
+        .playlist-item-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .playlist-item-name {
+            color: #F5E6D3;
+            font-size: 0.95rem;
+            font-family: 'Georgia', serif;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .playlist-item.active .playlist-item-name {
+            color: #D4A843;
+        }
+
+        .playlist-item-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(212, 168, 67, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #D4A843;
+            font-size: 12px;
+            transition: background 0.2s;
+        }
+
+        .playlist-item:hover .playlist-item-icon {
+            background: rgba(212, 168, 67, 0.3);
+        }
+
+        .playlist-item.active .playlist-item-icon {
+            background: #D4A843;
+            color: #471e1e;
+        }
+
+        @media (max-width: 480px) {
+            .playlist-panel {
+                max-height: 70vh;
+            }
+
+            .playlist-item {
+                padding: 10px 16px;
+            }
+
+            .playlist-item-name {
+                font-size: 0.9rem;
+            }
         }
 
         @media (max-width: 768px) {
@@ -2567,7 +2941,7 @@ q            position: absolute;
 
         .footer-section {
             width: 100vw;
-            background: url('Assect/bg image.jpg') center/cover no-repeat;
+            background: url('Assect/bg/bg image.jpg') center/cover no-repeat;
             position: relative;
             overflow: hidden;
             display: flex;
@@ -2596,7 +2970,7 @@ q            position: absolute;
             left: -50px;
             width: 300px;
             height: 300px;
-            background: url('Assect/bg-patten-kozham.png') center/cover no-repeat;
+            background: url('Assect/bg/bg-patten-kozham.png') center/cover no-repeat;
             transform: rotate(180deg);
             opacity: 0.3;
             z-index: 0;
@@ -2608,7 +2982,7 @@ q            position: absolute;
             right: -50px;
             width: 300px;
             height: 300px;
-            background: url('Assect/bg-patten-kozham.png') center/cover no-repeat;
+            background: url('Assect/bg/bg-patten-kozham.png') center/cover no-repeat;
             opacity: 0.3;
             z-index: 0;
         }
@@ -2919,7 +3293,7 @@ q            position: absolute;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('Assect/invitation_front_bg.jpeg') center/cover no-repeat;
+            background: url('Assect/bg/invitation_front_bg.jpeg') center/cover no-repeat;
             z-index: 0;
         }
 
@@ -3504,7 +3878,7 @@ q            position: absolute;
 
     <div class="header" id="header">
         <div class="header-left">
-            <img src="Assect/logo.png" alt="Logo" class="header-logo">
+            <img src="Assect/ui/logo.png" alt="Logo" class="header-logo">
             <span class="header-name">K.Vinothkumar <span class="footer-ampersand">&</span> R.Premasri</span>
         </div>
         <nav class="header-nav">
@@ -3544,20 +3918,20 @@ q            position: absolute;
 
     <section class="home-section" id="home">
         <div class="flower-shower" id="flowerShower"></div>
-        <img src="Assect/Wether.jpeg" alt="Sky" class="weather-bg">
-        <img src="Assect/Chain_vizhaku.png" alt="Chain Left" class="chain-left">
-        <img src="Assect/Chain_vizhaku.png" alt="Chain Right" class="chain-right">
-        <img src="Assect/vinayagar.png" alt="Vinayagar" class="vinayagar">
-        <img src="Assect/banana_tree_left.png" alt="Banana Tree Left" class="banana-left">
-        <img src="Assect/banana_tree_right.png" alt="Banana Tree Right" class="banana-right">
-        <img src="Assect/temple.png" alt="Temple" class="temple">
-        <img src="Assect/murugar_velu.png" alt="Murugan Vel" class="murugan-vel">
+        <img src="Assect/bg/Wether.jpeg" alt="Sky" class="weather-bg">
+        <img src="Assect/design/Chain_vizhaku.png" alt="Chain Left" class="chain-left">
+        <img src="Assect/design/Chain_vizhaku.png" alt="Chain Right" class="chain-right">
+        <img src="Assect/design/vinayagar.png" alt="Vinayagar" class="vinayagar">
+        <img src="Assect/design/banana_tree_left.png" alt="Banana Tree Left" class="banana-left">
+        <img src="Assect/design/banana_tree_right.png" alt="Banana Tree Right" class="banana-right">
+        <img src="Assect/design/temple.png" alt="Temple" class="temple">
+        <img src="Assect/design/murugar_velu.png" alt="Murugan Vel" class="murugan-vel">
         <div class="greeting" id="greeting">
             <h2 class="greeting-title">Wedding Invitation</h2>
             <h1 class="greeting-names">K.Vinothkumar<br>&amp;<br>R.Premasri</h1>
             <p class="greeting-subtitle">We joyfully invite you to celebrate our wedding</p>
         </div>
-        <img src="Assect/mappula_ponnu.png" alt="Couple" class="couple">
+        <img src="Assect/couple/mappula_ponnu.png" alt="Couple" class="couple">
     </section>
 
     <section class="date-section" id="date">
@@ -3600,7 +3974,7 @@ q            position: absolute;
                     <p class="person-family">Grandson of Late K. Subramaniam Achariyar &amp; Saraswathi through their daughter.</p>
                     <p class="person-family">Son of Late T. Kasinathan Achariyar &amp; Ramu Ammal.</p>
                 </div>
-                <img src="Assect/mappala.png" alt="Mappala" class="person-img scroll-hidden slide-left">
+                <img src="Assect/couple/mappala.png" alt="Mappala" class="person-img scroll-hidden slide-left">
             </div>
             <div class="person-row ponnu">
                 <div class="person-details scroll-hidden slide-left">
@@ -3611,7 +3985,7 @@ q            position: absolute;
                     <p class="person-family">Granddaughter of Late Ramaiya Achariyar &amp; Lakshmi through their daughter.</p>
                     <p class="person-family">Only daughter of S. Ramesh Achariyar &amp; Sakunthala.</p>
                 </div>
-                <img src="Assect/ponnu.png" alt="Ponnu" class="person-img scroll-hidden slide-right">
+                <img src="Assect/couple/ponnu.png" alt="Ponnu" class="person-img scroll-hidden slide-right">
             </div>
         </div>
     </section>
@@ -3623,53 +3997,53 @@ q            position: absolute;
         </div>
         <div class="gallery-custom">
             <div class="gallery-left scroll-hidden zoom-in" onclick="openLightbox(0)">
-                <img src="Assect/card1.webp" alt="Card 1">
+                <img src="Assect/cards/card1.webp" alt="Card 1">
             </div>
             <div class="gallery-right">
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(1)">
-                    <img src="Assect/card2.webp" alt="Card 2">
+                    <img src="Assect/cards/card2.webp" alt="Card 2">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(2)">
-                    <img src="Assect/card3.webp" alt="Card 3">
+                    <img src="Assect/cards/card3.webp" alt="Card 3">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(3)">
-                    <img src="Assect/card4.webp" alt="Card 4">
+                    <img src="Assect/cards/card4.webp" alt="Card 4">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(4)">
-                    <img src="Assect/card10.webp" alt="card 10">
+                    <img src="Assect/cards/card10.webp" alt="card 10">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(5)">
-                    <img src="Assect/IMG_20260518_085243.jpg" alt="Card 6">
+                    <img src="Assect/cards/IMG_20260518_085243.jpg" alt="Card 6">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(6)">
-                    <img src="Assect/card7.webp" alt="Card 7">
+                    <img src="Assect/cards/card7.webp" alt="Card 7">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(7)">
-                    <img src="Assect/card8.webp" alt="Card 8">
+                    <img src="Assect/cards/card8.webp" alt="Card 8">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(8)">
-                    <img src="Assect/card9.webp" alt="Card 9">
+                    <img src="Assect/cards/card9.webp" alt="Card 9">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(9)">
-                    <img src="Assect/card5.webp" alt="card 5">
+                    <img src="Assect/cards/card5.webp" alt="card 5">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(10)">
-                    <img src="Assect/card11.webp" alt="Card 11">
+                    <img src="Assect/cards/card11.webp" alt="Card 11">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(11)">
-                    <img src="Assect/IMG-20260913-WA0009.jpg" alt="Card 12">
+                    <img src="Assect/cards/IMG-20260913-WA0009.jpg" alt="Card 12">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(12)">
-                    <img src="Assect/card13.webp" alt="Card 13">
+                    <img src="Assect/cards/card13.webp" alt="Card 13">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(13)">
-                    <img src="Assect/1788973677257.png" alt="Card 14">
+                    <img src="Assect/cards/1788973677257.png" alt="Card 14">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(14)">
-                    <img src="Assect/IMG-20260909-WA0026.jpg" alt="Card 15">
+                    <img src="Assect/cards/IMG-20260909-WA0026.jpg" alt="Card 15">
                 </div>
                 <div class="gallery-right-item scroll-hidden zoom-in" onclick="openLightbox(15)">
-                    <img src="Assect/IMG-20260911-WA0041.jpg" alt="Card 16">
+                    <img src="Assect/cards/IMG-20260911-WA0041.jpg" alt="Card 16">
                 </div>
             
             </div>
@@ -3690,7 +4064,7 @@ q            position: absolute;
         </div>
         <div class="events-grid">
 <div class="event-card scroll-hidden fade-up">
-                <img src="Assect/flower.png" alt="Flower" class="event-icon-img">
+                <img src="Assect/design/flower.png" alt="Flower" class="event-icon-img">
                 <h3>Reception</h3>
                 <div class="event-time">15 Nov 2026 - 06:00 PM</div>
                 <p>Grand reception dinner</p>
@@ -3708,7 +4082,7 @@ q            position: absolute;
                 <p>Muhurtham 10:30 AM - 12:00 PM</p>
             </div>
 <div class="event-card scroll-hidden fade-up">
-                <img src="Assect/flower.png" alt="Flower" class="event-icon-img">
+                <img src="Assect/design/flower.png" alt="Flower" class="event-icon-img">
                 <h3>Reception</h3>
                 <div class="event-time">20 Nov 2026 - 06:00 PM - 07:30 PM</div>
                 <p>Ram Chandra Party Hall, Thiruverkadu</p>
@@ -3809,7 +4183,7 @@ q            position: absolute;
         <div class="footer-kozham-left"></div>
         <div class="footer-kozham-right"></div>
         <div class="footer-kozham-top"></div>
-        <img src="Assect/couple_fooder.png" alt="Couple" class="footer-couple">
+        <img src="Assect/couple/couple_fooder.png" alt="Couple" class="footer-couple">
         <div class="footer-message">
             <div class="heart-corner tl"></div>
             <div class="heart-corner tr"></div>
@@ -3822,14 +4196,18 @@ q            position: absolute;
         </div>
     </section>
 
-    <div class="music-player" id="musicPlayer">
+    <div class="music-player minimized" id="musicPlayer">
         <audio id="bgMusic" preload="auto"></audio>
+        <button class="minimize-btn" id="minimizeBtn" onclick="minimizePlayer()" title="Minimize">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
         <button class="play-btn" id="playBtn" onclick="toggleMusic()">
             <span class="pause-icon" style="display:none;">&#10074;&#10074;</span>
             <span class="play-icon">&#9654;</span>
         </button>
+        <button class="music-nav-btn" id="prevBtn" onclick="prevSong()">&#9664;</button>
         <div class="music-info">
-            <span class="music-title" id="musicTitle">Kummi Adi</span>
+            <span class="music-title" id="musicTitle">Song 1</span>
             <div class="music-bars">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -3838,6 +4216,28 @@ q            position: absolute;
                 <span class="bar"></span>
             </div>
         </div>
+        <button class="music-nav-btn" id="nextBtn" onclick="nextSong()">&#9654;</button>
+        <button class="playlist-btn" id="playlistBtn" onclick="togglePlaylist()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        </button>
+    </div>
+
+    <button class="music-mini-icon visible" id="musicMiniIcon" onclick="expandPlayer()" title="Expand">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/></svg>
+        <div class="mini-bars" id="miniBars">
+            <span class="mini-bar"></span>
+            <span class="mini-bar"></span>
+            <span class="mini-bar"></span>
+        </div>
+    </button>
+
+    <div class="playlist-overlay" id="playlistOverlay" onclick="togglePlaylist()"></div>
+    <div class="playlist-panel" id="playlistPanel">
+        <div class="playlist-header">
+            <span class="playlist-title">Playlist</span>
+            <button class="playlist-close" onclick="togglePlaylist()">&times;</button>
+        </div>
+        <div class="playlist-body" id="playlistBody"></div>
     </div>
 
     <script>
@@ -3847,18 +4247,70 @@ q            position: absolute;
         const pauseIcon = playBtn.querySelector('.pause-icon');
         const playIcon = playBtn.querySelector('.play-icon');
         const musicTitle = document.getElementById('musicTitle');
+        const playlistBody = document.getElementById('playlistBody');
+        const playlistPanel = document.getElementById('playlistPanel');
+        const playlistOverlay = document.getElementById('playlistOverlay');
         let isPlaying = false;
         let shouldPlay = false;
 
         const songs = [
-            { title: 'Song 1', src: 'Assect/song1.wav' },
-            { title: 'Song 2', src: 'Assect/song2.wav' },
-            { title: 'Song 3', src: 'Assect/song3.wav' },
-            { title: 'Song 4', src: 'Assect/song4.wav' },
-            { title: 'Song 5', src: 'Assect/song5.wav' }, 
-            { title: 'Song 6', src: 'Assect/card6.mp3' }, 
-            { title: 'Song 7', src: 'Assect/Card 7.mp3' }
+            { title: 'Song 1', src: 'Assect/audio/song1.wav' },
+            { title: 'Song 2', src: 'Assect/audio/song2.wav' },
+            { title: 'Song 3', src: 'Assect/audio/song3.wav' },
+            { title: 'Song 4', src: 'Assect/audio/song4.wav' },
+            { title: 'Song 5', src: 'Assect/audio/song5.wav' },
+            { title: 'Song 6', src: 'Assect/audio/song6.mp3' },
+            { title: 'Song 7', src: 'Assect/audio/song7.mp3' },
+            { title: 'Song 8', src: 'Assect/audio/song8.mp3' }
         ];
+
+        function renderPlaylist() {
+            playlistBody.innerHTML = songs.map(function(song, i) {
+                return '<div class="playlist-item' + (i === currentSongIndex ? ' active' : '') + '" onclick="playSongFromPlaylist(' + i + ')">' +
+                    '<span class="playlist-item-num">' + (i + 1) + '</span>' +
+                    '<div class="playlist-item-info"><span class="playlist-item-name">' + song.title + '</span></div>' +
+                    '<div class="playlist-item-icon">' + (i === currentSongIndex && isPlaying ? '&#9646;&#9646;' : '&#9654;') + '</div>' +
+                    '</div>';
+            }).join('');
+        }
+
+        function playSongFromPlaylist(index) {
+            currentSongIndex = index;
+            shouldPlay = true;
+            setCurrentSong(index);
+            attemptedSongs = 0;
+            audio.play().then(function() {
+                window.toggleMusicState(true);
+                attemptedSongs = 0;
+                renderPlaylist();
+            }).catch(function(err) {
+                console.warn('Play failed:', err.message);
+            });
+        }
+
+        function prevSong() {
+            var newIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+            playSongFromPlaylist(newIndex);
+        }
+
+        function nextSong() {
+            var newIndex = (currentSongIndex + 1) % songs.length;
+            playSongFromPlaylist(newIndex);
+        }
+
+        function togglePlaylist() {
+            var isActive = playlistPanel.classList.contains('active');
+            if (isActive) {
+                playlistPanel.classList.remove('active');
+                playlistOverlay.classList.remove('active');
+                document.body.classList.remove('modal-open');
+                document.body.style.top = '';
+            } else {
+                renderPlaylist();
+                playlistPanel.classList.add('active');
+                playlistOverlay.classList.add('active');
+            }
+        }
 
         const VISIT_KEY = 'wedding_song_visit';
 
@@ -3898,11 +4350,13 @@ q            position: absolute;
             audio.play().then(() => {
                 window.toggleMusicState(true);
                 attemptedSongs = 0;
+                renderPlaylist();
             }).catch(function(err) {
                 console.warn('Autoplay blocked:', err.message);
                 audio.load();
                 audio.play().then(() => {
                     window.toggleMusicState(true);
+                    renderPlaylist();
                 }).catch(function(e) {
                     console.warn('Retry play failed:', e.message);
                 });
@@ -3917,6 +4371,7 @@ q            position: absolute;
                 audio.play().then(() => {
                     window.toggleMusicState(true);
                     attemptedSongs = 0;
+                    renderPlaylist();
                 }).catch(() => {});
             }
         });
@@ -3924,26 +4379,27 @@ q            position: absolute;
         audio.addEventListener('ended', () => {
             if (!shouldPlay) return;
             attemptedSongs = 0;
-            setCurrentSong(currentSongIndex + 1);
-            audio.play().then(() => {
-                window.toggleMusicState(true);
-                attemptedSongs = 0;
-            }).catch(() => {});
+            nextSong();
         });
 
         setCurrentSong(currentSongIndex);
+        renderPlaylist();
 
         window.toggleMusicState = function(playing) {
             isPlaying = playing;
+            var miniIcon = document.getElementById('musicMiniIcon');
             if (playing) {
                 pauseIcon.style.display = 'inline';
                 playIcon.style.display = 'none';
                 musicPlayer.classList.add('playing');
+                miniIcon.classList.add('playing');
             } else {
                 pauseIcon.style.display = 'none';
                 playIcon.style.display = 'inline';
                 musicPlayer.classList.remove('playing');
+                miniIcon.classList.remove('playing');
             }
+            renderPlaylist();
         };
 
         function toggleMusic() {
@@ -3953,14 +4409,18 @@ q            position: absolute;
                 pauseIcon.style.display = 'none';
                 playIcon.style.display = 'inline';
                 musicPlayer.classList.remove('playing');
+                document.getElementById('musicMiniIcon').classList.remove('playing');
                 isPlaying = false;
+                renderPlaylist();
             } else {
                 shouldPlay = true;
                 audio.play().then(() => {
                     pauseIcon.style.display = 'inline';
                     playIcon.style.display = 'none';
                     musicPlayer.classList.add('playing');
+                    document.getElementById('musicMiniIcon').classList.add('playing');
                     isPlaying = true;
+                    renderPlaylist();
                 }).catch(function(e) {
                     console.warn('Play failed:', e.message);
                     audio.load();
@@ -3968,29 +4428,41 @@ q            position: absolute;
                         pauseIcon.style.display = 'inline';
                         playIcon.style.display = 'none';
                         musicPlayer.classList.add('playing');
+                        document.getElementById('musicMiniIcon').classList.add('playing');
                         isPlaying = true;
+                        renderPlaylist();
                     }).catch(() => {});
                 });
             }
         }
 
+        function minimizePlayer() {
+            musicPlayer.classList.add('minimized');
+            document.getElementById('musicMiniIcon').classList.add('visible');
+        }
+
+        function expandPlayer() {
+            musicPlayer.classList.remove('minimized');
+            document.getElementById('musicMiniIcon').classList.remove('visible');
+        }
+
         const images = [
-            'Assect/card1.webp',
-            'Assect/card2.webp',
-            'Assect/card3.webp',
-            'Assect/card4.webp',
-            'Assect/card10.webp',
-            'Assect/IMG_20260518_085243.jpg',
-            'Assect/card7.webp',
-            'Assect/card8.webp',
-            'Assect/card9.webp',
-            'Assect/card5.webp',
-            'Assect/card11.webp',
-            'Assect/IMG-20260913-WA0009.jpg',
-            'Assect/card13.webp',
-            'Assect/1788973677257.png', 
-            'Assect/IMG-20260909-WA0026.jpg', 
-            'Assect/IMG-20260911-WA0041.jpg'
+            'Assect/cards/card1.webp',
+            'Assect/cards/card2.webp',
+            'Assect/cards/card3.webp',
+            'Assect/cards/card4.webp',
+            'Assect/cards/card10.webp',
+            'Assect/cards/IMG_20260518_085243.jpg',
+            'Assect/cards/card7.webp',
+            'Assect/cards/card8.webp',
+            'Assect/cards/card9.webp',
+            'Assect/cards/card5.webp',
+            'Assect/cards/card11.webp',
+            'Assect/cards/IMG-20260913-WA0009.jpg',
+            'Assect/cards/card13.webp',
+            'Assect/cards/1788973677257.png', 
+            'Assect/cards/IMG-20260909-WA0026.jpg', 
+            'Assect/cards/IMG-20260911-WA0041.jpg'
         ];
         let currentIndex = 0;
 
