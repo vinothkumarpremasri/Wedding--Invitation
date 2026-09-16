@@ -3825,6 +3825,12 @@ q            position: absolute;
     <div class="music-player" id="musicPlayer">
         <audio id="bgMusic" preload="auto"></audio>
         <button class="play-btn" id="playBtn" onclick="toggleMusic()">
+            <button id="prevBtn" aria-label="Previous">⏮</button>
+<button id="playBtn" aria-label="Play/Pause">
+  <span class="play-icon">▶</span>
+  <span class="pause-icon" style="display:none;">⏸</span>
+</button>
+<button id="nextBtn" aria-label="Next">⏭</button>
             <span class="pause-icon" style="display:none;">&#10074;&#10074;</span>
             <span class="play-icon">&#9654;</span>
         </button>
@@ -4456,6 +4462,78 @@ q            position: absolute;
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
         scrollElements.forEach(el => scrollObserver.observe(el));
+        const audio = document.getElementById('bgMusic');
+const playBtn = document.getElementById('playBtn');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const musicPlayer = document.getElementById('musicPlayer');
+const pauseIcon = playBtn.querySelector('.pause-icon');
+const playIcon = playBtn.querySelector('.play-icon');
+const musicTitle = document.getElementById('musicTitle');
+
+// 1. Define your playlist
+const playlist = [
+  { title: "Song One", src: "path/to/song1.mp3" },
+  { title: "Song Two", src: "path/to/song2.mp3" },
+  { title: "Song Three", src: "path/to/song3.mp3" }
+];
+
+let currentIndex = 0;
+let isPlaying = false;
+
+// 2. Load song by index
+function loadTrack(index) {
+  const track = playlist[index];
+  audio.src = track.src;
+  if (musicTitle) musicTitle.textContent = track.title;
+}
+
+// 3. UI and playback helpers
+function playAudio() {
+  audio.play();
+  isPlaying = true;
+  playIcon.style.display = 'none';
+  pauseIcon.style.display = 'inline';
+}
+
+function pauseAudio() {
+  audio.pause();
+  isPlaying = false;
+  playIcon.style.display = 'inline';
+  pauseIcon.style.display = 'none';
+}
+
+function togglePlay() {
+  if (isPlaying) {
+    pauseAudio();
+  } else {
+    playAudio();
+  }
+}
+
+// 4. Navigation logic (loops around the ends)
+function nextTrack() {
+  currentIndex = (currentIndex + 1) % playlist.length;
+  loadTrack(currentIndex);
+  if (isPlaying) playAudio();
+}
+
+function prevTrack() {
+  currentIndex = (currentIndex - 1 + playlist.length) % playlist.length;
+  loadTrack(currentIndex);
+  if (isPlaying) playAudio();
+}
+
+// 5. Event Listeners
+playBtn.addEventListener('click', togglePlay);
+nextBtn.addEventListener('click', nextTrack);
+prevBtn.addEventListener('click', prevTrack);
+
+// Automatically play next song when current one ends
+audio.addEventListener('ended', nextTrack);
+
+// Initial track setup
+loadTrack(currentIndex);
     </script>
 </body>
 </html>
